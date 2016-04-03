@@ -21,7 +21,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by hongyuechi on 3/10/16.
  */
-public class Versions {
+public class VersionsTest {
     static WebDriver driver = new FirefoxDriver();
 
     @BeforeClass
