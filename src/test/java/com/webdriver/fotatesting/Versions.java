@@ -84,7 +84,7 @@ public class Versions {
         String sku = driver.findElement(By.xpath("//tr[td=\"auto test 1\" and td=\"126\" and contains(.,\"autotest\")]/td[2]")).getText();
         String name = driver.findElement(By.xpath("//tr[td=\"auto test 1\" and td=\"126\" and contains(.,\"autotest\")]/td[6]")).getText();
         String fileName = name.substring(0, name.indexOf("-"));
-        System.out.println("Product is: " + product + ", sku is " + sku + ", file name is: " + fileName);
+        System.out.println("ProductTest is: " + product + ", sku is " + sku + ", file name is: " + fileName);
 
         Map<String, String> getItems = new HashMap<String, String>();
         getItems.put("model", product);

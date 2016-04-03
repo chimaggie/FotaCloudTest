@@ -18,7 +18,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by hongyuechi on 3/7/16.
  */
-public class Product {
+public class ProductTest {
     static WebDriver driver = new FirefoxDriver();
 
     @BeforeClass
@@ -91,7 +91,7 @@ public class Product {
         catch (Exception e){}
         driver.findElement(By.xpath("//tr[td='test']//span[@translate='entity.action.view']")).click();
         String text = driver.findElement(By.xpath("//h2")).getText();
-        Assert.assertEquals("Product test", text);
+        Assert.assertEquals("ProductTest test", text);
     }
     @Test
     public void delete() {
