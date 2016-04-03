@@ -91,7 +91,7 @@ public class ProductTest {
         catch (Exception e){}
         driver.findElement(By.xpath("//tr[td='test']//span[@translate='entity.action.view']")).click();
         String text = driver.findElement(By.xpath("//h2")).getText();
-        Assert.assertEquals("ProductTest test", text);
+        Assert.assertEquals("Product test", text);
     }
     @Test
     public void delete() {
